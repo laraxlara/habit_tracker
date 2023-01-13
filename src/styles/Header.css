@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+header {
+    margin: 20px 250px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+}
