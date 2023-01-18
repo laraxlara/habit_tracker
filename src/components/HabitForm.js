@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Box } from '@mui/material'
 import TextField from '@mui/material/TextField';
 import Button from './Button';
@@ -33,7 +34,9 @@ const HabitForm = () => {
         </Box>
         <Box sx={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
             <Button {...propsSaveButton} />
-            <Button {...propsCancelButton} />
+            <Link to='..'>
+                <Button {...propsCancelButton} />
+            </Link>
         </Box>
     </Box>
   )

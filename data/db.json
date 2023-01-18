@@ -1,0 +1,14 @@
+{
+    "habits": [
+        {
+            "id": 1,
+            "title": "Habit One",
+            "description": "Description of habit one."
+        },
+        {
+            "id": 2,
+            "title": "Habit Two",
+            "description": "Description of habit two."
+        }
+    ]
+}
