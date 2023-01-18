@@ -4,12 +4,12 @@ import Checkbox from './Checkbox'
 import CheckboxInput from './CheckboxInput'
 import CheckboxLabel from './CheckboxLabel'
 
-const Habit = () => {
+const Habit = (props) => {
   return (
     <Container sx={{ display: 'flex', justifyContent: 'center' }}>
         <Checkbox>
-            <CheckboxInput />
-            <CheckboxLabel />
+            <CheckboxInput {...props} />
+            <CheckboxLabel {...props} />
         </Checkbox>
     </Container>
   )

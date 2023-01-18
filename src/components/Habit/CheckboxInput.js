@@ -1,10 +1,10 @@
 import React from 'react'
 import Checkbox from '@mui/material/Checkbox';
 
-const CheckboxInput = () => {
+const CheckboxInput = (props) => {
   return (
     <>
-      <Checkbox defaultChecked color="secondary" />
+      <Checkbox checked={props.checked} color="secondary" />
     </>
   )
 }

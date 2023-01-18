@@ -3,12 +3,14 @@
         {
             "id": 1,
             "title": "Habit One",
-            "description": "Description of habit one."
+            "description": "Description of habit one.",
+            "done": false
         },
         {
             "id": 2,
             "title": "Habit Two",
-            "description": "Description of habit two."
+            "description": "Description of habit two.",
+            "done": false
         }
     ]
 }

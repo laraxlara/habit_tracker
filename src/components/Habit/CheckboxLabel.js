@@ -1,9 +1,9 @@
 import React from 'react'
 import TextField from '@mui/material/TextField';
 
-const CheckboxLabel = ({ children }) => {
+const CheckboxLabel = (props) => {
   return (
-    <TextField disabled fullWidth variant="standard" color="secondary">{children}</TextField>
+    <TextField fullWidth variant="standard" color="secondary" value={props.value} />
   )
 }
 
