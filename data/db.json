@@ -10,7 +10,7 @@
             "id": 2,
             "title": "Habit Two",
             "description": "Description of habit two.",
-            "done": false
+            "done": true
         }
     ]
 }

@@ -6,7 +6,7 @@ import HabitList from '../components/HabitList/HabitList'
 const Home = () => {
   return (
     <Layout>
-      <HomeSection />
+      {/* <HomeSection /> */}
       <HabitList />
     </Layout>
   )
