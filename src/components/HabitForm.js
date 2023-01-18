@@ -4,7 +4,7 @@ import { Box } from '@mui/material'
 import TextField from '@mui/material/TextField';
 import Button from './Button';
 
-const HabitForm = () => {
+const HabitForm = (props) => {
 
     const propsSaveButton = {
         color: 'white',
@@ -27,10 +27,10 @@ const HabitForm = () => {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2rem', width: '600px' }}>
         <Box>
-            <TextField label="Title" color='secondary' />
+            <TextField color='secondary' value={props.title} />
         </Box>
         <Box>
-            <TextField label="Description" fullWidth multiline color='secondary' rows={16} />
+            <TextField fullWidth multiline color='secondary' rows={16} value={props.description} />
         </Box>
         <Box sx={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
             <Button {...propsSaveButton} />

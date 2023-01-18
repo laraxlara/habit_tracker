@@ -14,12 +14,12 @@ const Habit = (props) => {
         <Checkbox>
             <CheckboxInput {...props} />
             <CheckboxLabel {...props} />
-            <Link to={props.link}>
-              <IconButton color="secondary" aria-label="edit">
-                <CreateIcon />
-              </IconButton>
+            <Link to={props.to}>
+            <IconButton color="secondary" aria-label="edit">
+              <CreateIcon />
+            </IconButton>
             </Link>
-            <IconButton aria-label="delete" onClick={props.onClick}>
+            <IconButton aria-label="delete">
               <DeleteIcon />
             </IconButton>
         </Checkbox>
