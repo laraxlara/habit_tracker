@@ -5,7 +5,7 @@ import Habit from '../Habit/index'
 import { Box } from '@mui/material'
 
 const HabitList = (props) => {
-    const { response } = useQuery(axios.get('http://localhost:8000/habits'))
+    const { response } = useQuery(axios.get('http://localhost:3000/habits'))
 
   return (
     <>
