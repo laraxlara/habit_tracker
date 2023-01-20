@@ -25,20 +25,22 @@ const HabitForm = (props) => {
     }
 
   return (
+    <form onSubmit={props.onSubmit}>
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2rem', width: '600px' }}>
         <Box>
-            <TextField color='secondary' value={props.title} />
+            <TextField name='title' color='secondary' value={props.title} onChange={props.onChange} />
         </Box>
         <Box>
-            <TextField fullWidth multiline color='secondary' rows={16} value={props.description} />
+            <TextField name='description' fullWidth multiline color='secondary' rows={16} value={props.description} onChange={props.onChange} />
         </Box>
         <Box sx={{ display: 'flex', gap: '1rem', justifyContent: 'flex-end' }}>
-            <Button {...propsSaveButton} />
+            <button onClick={props.onClick}>SAVE</button>
             <Link to='..'>
                 <Button {...propsCancelButton} />
             </Link>
         </Box>
     </Box>
+    </form>
   )
 }
 
