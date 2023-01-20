@@ -2,3 +2,6 @@ header {
     margin: 20px 250px;
 }
 
+header img {
+    width: 50px;
+}

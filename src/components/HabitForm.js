@@ -9,9 +9,9 @@ const HabitForm = (props) => {
     const propsSaveButton = {
         color: 'white',
         padding: '0.7rem 1.5rem',
-        border: '2px solid #dd33fa',
+        border: '2px solid #FFADBC',
         borderRadius: '4px',
-        backgroundColor: '#dd33fa',
+        backgroundColor: '#FFADBC',
         text: 'SAVE'
     }
 
