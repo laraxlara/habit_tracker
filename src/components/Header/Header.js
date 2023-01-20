@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { Container, Box } from '@mui/material';
 import Button from '../Button';
+import logo from '../../images/flower.png'
 
 import '../../styles/Header.css'
 
@@ -10,17 +12,17 @@ const Header = () => {
     color: 'white',
     margin: '0 2rem',
     padding: '1rem 2rem',
-    border: '2px solid #dd33fa',
+    border: '2px solid #FFADBC',
     borderRadius: '4px',
-    backgroundColor: '#dd33fa',
+    backgroundColor: '#FFADBC',
     text: 'NEW'
   }
 
   const propsSignOutButton = {
-    color: '#dd33fa',
+    color: '#FFADBC',
     margin: '0',
     padding: '1rem',
-    border: '2px solid #dd33fa',
+    border: '2px solid #FFADBC',
     borderRadius: '4px',
     backgroundColor: 'white',
     text: 'SIGN OUT'
@@ -29,9 +31,13 @@ const Header = () => {
   return (
     <header>
       <Container sx={{ display: 'flex', justifyContent: 'space-between' }} maxWidth='xl'>
-        <h1>Habit Tracker</h1>
+        <Link to='/'>
+          <img src={logo} alt='Habit Tracker' />
+        </Link>
         <Box sx={{ display: 'flex' }}>
-          <Button {...propsNewButton}  />
+          <Link to='/new'>
+            <Button {...propsNewButton}  />
+          </Link>
           <Button {...propsSignOutButton} />
         </Box>
       </Container>
