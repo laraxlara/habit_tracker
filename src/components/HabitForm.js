@@ -25,7 +25,6 @@ const HabitForm = (props) => {
     }
 
   return (
-    <form onSubmit={props.onSubmit}>
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: '2rem', width: '600px' }}>
         <Box>
             <TextField name='title' color='secondary' value={props.title} onChange={props.onChange} />
@@ -40,7 +39,6 @@ const HabitForm = (props) => {
             </Link>
         </Box>
     </Box>
-    </form>
   )
 }
 

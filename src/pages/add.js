@@ -8,13 +8,6 @@ import { habitsReducer, INITIAL_STATE, ACTIONS } from '../hooks/habitsReducer'
 const AddNewHabit = () => {
   const [state, dispach] = useReducer(habitsReducer, INITIAL_STATE)
 
-  const handleSubmit = (e) => {
-    dispach({
-      type: ACTIONS.ADD_NEW_HABIT, 
-      payload: { title: e.target.title } 
-    })
-  }
-
   const handleChange = (e) => {
     e.preventDefault()
     dispach({
