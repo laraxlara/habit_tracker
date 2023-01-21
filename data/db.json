@@ -1,16 +1,44 @@
 {
-    "habits": [
-        {
-            "id": 1,
-            "title": "Habit One",
-            "description": "Description of habit one.",
-            "done": false
-        },
-        {
-            "id": 2,
-            "title": "Habit Two",
-            "description": "Description of habit two.",
-            "done": true
-        }
-    ]
+  "habits": [
+    {
+      "state": {
+        "id": "d3aa76b2-816c-499e-83d9-99eaded992bd",
+        "title": "vvhjvjh",
+        "description": "nv vvg"
+      },
+      "id": 1
+    },
+    {
+      "state": {
+        "id": "d3aa76b2-816c-499e-83d9-99eaded992bd",
+        "title": "vvhjvjh",
+        "description": "nv vvg"
+      },
+      "id": 2
+    },
+    {
+      "state": {
+        "id": "d3aa76b2-816c-499e-83d9-99eaded992bd",
+        "title": "vvhjvjh",
+        "description": "nv vvg"
+      },
+      "id": 3
+    },
+    {
+      "state": {
+        "id": "d3aa76b2-816c-499e-83d9-99eaded992bd",
+        "title": "vvhjvjh",
+        "description": "nv vvg"
+      },
+      "id": 4
+    },
+    {
+      "state": {
+        "id": "d3aa76b2-816c-499e-83d9-99eaded992bd",
+        "title": "vvhjvjh",
+        "description": "nv vvg"
+      },
+      "id": 5
+    }
+  ]
 }

@@ -1,4 +1,5 @@
 import React, { useReducer, useState } from 'react'
+import axios from 'axios'
 import Layout from '../components/layout'
 import Box from '@mui/material/Box'
 import HabitForm from '../components/HabitForm'
@@ -22,11 +23,15 @@ const AddNewHabit = () => {
     })
   }
 
-  console.log(state)
-
-  const handleClick = (e) => {
+  const handleClick = async (e) => {
     e.preventDefault()
-   
+    try {
+      await axios.post('http://localhost:3000/habits', {
+        state
+      })
+    } catch (error) {
+      console.log(error)
+    }    
   }
 
   return (

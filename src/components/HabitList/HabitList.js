@@ -11,8 +11,8 @@ const HabitList = (props) => {
     <>
         {response && response.map((habit) => {
             return (
-                <Box key={habit.id}>
-                    <Habit checked={habit.done} to={`/habit/${habit.id}`} value={habit.title} />
+                <Box key={habit.state.id}>
+                    <Habit checked={habit.state.done} to={`/habit/${habit.state.id}`} value={habit.state.title} />
                 </Box>
             )
         })}
